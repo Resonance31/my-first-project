@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+ <html lang="ru">
+   <head>
+     <meta charset="utf-8">
+ <title> Барбершоп 'Бородинский' </title>
+ <style type="text/css">
+ 
+ /* Нужно подключить normalize.css */
+ 
+html,
+body {
+min-width: 1122px;
+min-height: 1000px;
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", sans-serif;
+color: #ffffff;
+
+no-repeat center top;
+}
+
+
+body {
+min-width: 960px;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color: #ffffff;
+ text-transform: uppercase;
+} 
+
+.inner-page {
+color: #000000;
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;
+height: -1000px;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+height: 20px; 
+background-color: white;
+background-image: linear-hradient (-45deg, white 45%, black 50%, white 55%);
+background-size: 20px;
+}
+
+.container {
+width: 940px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+.main-header {
+margin-bottom: 60px;
+height: 70px;
+color: #ffffff;
+background-color: #000000;
+}
+
+.inner-page .main-header {
+margin-bottom: 55px;
+}
+
+.main-navigation {
+float: left;
+width: 780;
+min-height: 70px;
+}
+
+
+.main-navigation ul {
+margin: 0;
+padding: 0;
+list-style: none;
+font-size: 0;
+}
+
+
+.main-navigation li {
+display: inline-block;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+}
+
+.main-navigation a {
+display: block;
+padding: 25px 20px;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+.main-navigation a:hover {
+background: #242424;
+}
+
+.main-navigation .active {
+position: relative;
+
+background-color: none;
+}
+
+.main-navigation .active a:hover {
+background: none;
+}
+
+.main-navigation .active::after {
+content: "";
+position: absolute;
+right: 20px;
+bottom: 0;
+left: 20px;
+
+
+height: 5px;
+
+background-color: #ffffff;
+}
+
+.main-navigation .active span {
+display: block;
+padding: 25px 20px;
+}
+
+.main-navigation .logo-inner {
+float: left;
+width: 80px;
+height: 20px;
+padding-top: 22px;
+padding-right: 50px;
+margin-left: -150px;
+}
+
+.main-navigation .logo-inner img {
+width: 111px;
+height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+background: none;
+}
+
+.user-block {
+float: right;
+max-width: 140px;
+min-height: 60px;
+}
+
+
+.login {
+position: relative;
+display: inline-block;
+padding: 25px 20px;
+padding-left: 50px;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+color: #ffffff;
+text-decoration: none;
+}
+
+.login:hover {
+background-color: #242424;
+}
+
+
+.login::before {
+content: "";
+position: absolute;
+top: 25px;
+left: 20px;
+
+width: 18px;
+height: 18px;
+
+background: transparent url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat;
+background-position: -1px -210px;
+opacity: 0.3;
+}
+
+.login:hover::before {
+opacity: 1;
+}
+
+.index-logo {
+width: 368px;
+height: 204px;
+margin: 0 auto;
+margin-bottom: 85px;
+}
+
+
+.index-logo img {
+width: 388px;
+height: 204px;
+}
+
+.features {
+margin-bottom: 80px;
+}
+
+.features-item {
+float: left;
+width: 300px;
+margin-right: 20px;
+text-align: center;
+
+/* Только для оформления сетки */
+
+min-height: 175px;
+}
+
+.features-item:last-child {
+margin-right: 0;
+}
+
+.features-name {
+position: relative;
+display: block;
+margin-bottom: 30px;
+padding-bottom: 35px;
+font-size: 30px;
+line-height: 42px;
+}
+
+.features-name::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+margin-left: -10px;
+display: block;
+width: 20px;
+height: 20px;
+background-color: #ffffff;
+transform: rotate(45deg);
+}
+
+.index-content {
+margin-bottom: 35px;
+padding: 50px 80px;
+
+color: #000000;
+
+background: 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/column-delimiter.png") 
+no-repeat center,
+#f8f5f2 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg");
+}
+
+.index-content-left {
+float: left;
+width: 380px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-right {
+float: right;
+width: 300px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-title {
+margin: 0;
+margin-bottom: 25px;
+
+font-size: 26px;
+line-height: 42px;
+}
+
+.index-content p {
+margin: 0;
+margin-bottom: 25px;
+}
+
+.news-preview {
+margin: 0;
+padding: 0;
+padding-right: 35px;
+
+list-style: none;
+}
+
+
+.news-preview li {
+margin-bottom: 25px;
+}
+
+.news-preview p {
+margin-bottom: 0;
+}
+
+.news-preview time {
+text-transform: none;
+font-weight: 400;
+}
+
+
+.btn {
+
+display: inline-block;
+margin-right: 16px;
+padding: 10px 26px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+vertical-align: top;
+text-align: center;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
+
+background-color: #000000;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+background-color: #663d15;
+}
+
+
+.btn.disabled,
+.btn:disabled {
+cursor: default;
+opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+background-color: #000000;
+}
+
+
+.gallery {
+position: relative;
+
+height: 260px;
+}
+
+.gallery-content {
+height: 164px;
+margin: 0;
+
+background-color: #cccccc;
+border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+width: 286px;
+height: 164px;
+}
+
+.gallery .btn {
+position: absolute;
+bottom: 0;
+
+width: 140px;
+margin: 0;
+}
+
+.gallery-prev {
+left: 0;
+}
+
+.gallery-next {
+right: 0;
+}
+
+.appointment-form input {
+float: left;
+width: 106px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding: 7px 15px;
+margin-top: -1.5px;
+
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color; #000000;
+text-transform: uppercase;
+
+background-color: #f9f6f3;
+border: 2px solid #000000;
+outline: none;
+}
+
+.appointment-form input:focus {
+border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+margin-right: 0;
+}
+
+.appointment-form .btn {
+clear: both;
+width: 100%;
+}
+
+/*Стили внутренних страниц */
+
+inner-page-title {
+margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+
+font-size: 30px;
+line-height: 42px;
+}
+
+.breadcrumbs {
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.breadcrumbs li {
+position: relative;
+
+display: inline;
+padding-right: 40px;
+
+}
+
+.breadcrumbs li::after {
+content:"";
+position: absolute;
+top: 4px;
+right: 18px;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+color: #000000;
+text-decoration: none;
+
+}
+
+.breadcrumbs a:hover {
+text-decoration: underline;
+}
+
+.breadcrumbs .current {
+color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+display: none;
+}
+
+/* Общие стили для контентных тегов */ 
+
+.inner-content {
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+.inner-content h2 {
+margin-top: 80px;
+margin-bottom: 30px;
+
+font-size: 24px;
+line-height: 30px;
+}
+
+.inner-content p {
+margin: 14px 0;
+}
+
+.prices-table {
+border-collapse: collapse;
+}
+
+.prices-table td {
+padding: 10px 15px;
+
+border: 2px solid #000000;
+}
+
+/ Особые стили для контентных тегов */
+
+.big-heading {
+margin-top: 55px;
+margin-bottom: 65px;
+
+text-align: center;
+}
+
+.big-heading h2 {
+position: relative;
+z-index: 2;
+
+display: inline;
+margin: 0px;
+
+padding: 0 25px;
+margin-left: 99.5px;
+font-size: 42px;
+line-height: 48px;
+text-align: center;
+
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;;
+}
+
+.big-heading::after {
+content: "";
+position: relative;
+top: -25px;
+z-index: 1;
+display: block;
+
+border-bottom: 2px solid #000000;
+}
+
+.custom-list-1 {
+margin: 14px 0;
+padding: 0;
+
+list-style: none;
+}
+
+.custom-list-1 li {
+position: relative;
+
+margin-bottom: 15px;
+padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+content: "";
+position: absolute;
+top: 8px;
+left: 0;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.prices-table {
+width: 100%;
+}
+
+.prices-table td {
+width: 50%;
+}
+
+.prices-table td:last-child {
+text-align: center;
+}
+
+.short-text {
+padding-right: 30px;
+}
+
+/* Колонки для контента */
+
+.inner-columns {
+margin: 70px 0;
+}
+
+.inner-columns h2{
+margin-right: 520px;
+margin-top: 70px;
+float: left;
+
+}
+
+.inner-column-left,
+.inner-column-right {
+width: 460px;
+}
+
+.inner-column-left {
+float: left;
+}
+
+.inner-column-right {
+float: right;
+}
+
+
+
+.main-footer {
+margin-top: 45px;
+padding-top: 20px;
+padding-bottom: 15px;
+
+color: #ffffff; 
+background: #252525 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/footer-background.jpg");
+}
+
+.footer-contacts {
+float: left;
+width: 320px;
+margin-right: 100px;
+}
+
+.footer-contacts a {
+color: #ffffff;
+}
+
+.footer-contacts a:hover {
+text-decoration: none;
+}
+
+.footer-social {
+float: left;
+width: 180px;
+margin-right: 168px;
+}
+
+.footer-copyright {
+float: right;
+
+max-width: 190px;
+}
+
+
+.footer-social p {
+margin: 0;
+margin-bottom: 15px;
+}
+
+.social-btn {
+display: inline-block;
+width: 43px;
+height: 43px;
+margin: 0 2px;
+
+font-size: 0;
+vertical-align: top;
+text-decoration: none;
+
+background: #000000 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat center;
+
+transition:
+background-position 0.5s,
+background-color 0.5s;
+}
+
+.social-btn:hover {
+background-color: #ffffff;
+}
+
+.social-btn-vk {
+background-position: 8px -825px;
+}
+
+
+.social-btn-fb {
+background-position: 15px -550px;
+}
+
+.social-btn-inst {
+background-position: 11px -690px;
+}
+
+.social-btn-vk:hover {
+background-position: 8px -759px;
+}
+
+
+.social-btn-fb:hover {
+background-position: 15px -478px;
+}
+
+.social-btn-inst:hover {
+background-position: 11px -619px;
+}
+
+.footer-copyright p {
+margin: 0;
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+.footer-copyright .btn {
+margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+color: #000000;
+
+background-color: #ffffff;
+}
+
+
+
+
+/* Всплывающая форма */
+
+.modal-content {
+position: absolute;
+top: 120px;
+left: 50%;
+
+display: none;
+width: 300px;
+margin-left: -230px;
+padding: 50px 80px;
+
+color: #000000;
+
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg");
+box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+.modal-content-map {
+position: fixed;
+top: 50%;
+left: 50%;
+z-index: 20;
+
+display: none;
+width: 766px;
+height: 561px;
+margin-top: -280px;
+margin-left: -390px;
+
+background: #e9e5dc url("https://raw.githubusercontent.com/htmlacademy-htmlcss/181240-barbershop/39410c6d778d54e5614be80960a6a296558e458f/img/barbershop-map.jpg");
+border: 7px solid white;
+box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10;
+
+display: none;
+width: 100%;
+height: 100%;
+
+background: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content-show {
+display: block;
+}
+
+
+.modal-overlay-show {
+display: block;
+}
+
+
+.modal-content-close {
+position: absolute;
+top: 0;
+right: -34px;
+
+width: 22px;
+height: 22px;
+
+font-size: 0;
+
+background-color: transparent;
+border: 0;
+outline: 0;
+cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+content: "";
+position: absolute;
+top: 10px;
+left: 2px;
+
+width: 19px;
+height: 3px;
+background-color: #d0d0d0;
+border-radius: 1px;
+}
+
+.modal-content-close::before {
+transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+margin: 0;
+margin-bottom: 20px;
+
+font-size: 25px;
+line-height: 42px;
+}
+
+.modal-content p {
+margin: 0;
+margin-bottom: 10px;
+font-size: 15px;
+}
+
+.modal-content .login-form {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+width: 280px;
+margin: 0;
+margin-bottom: 10px;
+padding: 5px 10px;
+padding-bottom: 4px;
+padding-right: 5px;
+
+font-size: 14px;
+line-height: 20px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color: #000000;
+text-transform: uppercase;
+background-color: #f9f6f3;
+
+border: 2px solid #000000;
+outline: none;
+}
+
+.login-form input:focus {
+border-color: #663d15;
+}
+
+.login-form input.icon-user {
+background-image: url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png");
+background-repeat: no-repeat;
+background-position: 103% -898px;
+}
+
+.login-form input.icon-password {
+background-image: url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png");
+background-repeat: no-repeat;
+background-position: 103% -272px;
+
+}
+
+.login-form .btn {
+width: 100%;
+margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+display: none;
+}
+
+
+
+.login-checkbox {
+position: relative;
+padding-left: 25px;
+font-size: 13px;
+cursor: pointer;
+}
+
+.login-checkbox:hover {
+color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+position: absolute;
+top: -3px;
+left: 0;
+
+width: 17px;
+height: 17px;
+
+border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+content: "";
+position: absolute;
+top: 8px;
+left: 1px;
+
+width: 15px;
+height: 2px;
+
+background-color: #000000;
+}
+
+.restore {
+font-size: 13px;
+float: right;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+transform: rotate(-45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+transform: rotate(45deg);
+}
+
+
+@keyframes bounce {
+0%    { transform: translateY(-2000px); }
+70%   { transform: translateY(30px);    }
+90%   { transform: translateY(-10px);   }
+100%  { transform: translateY(0);       }
+}
+
+.modal-content-show {
+display: block;
+animation: bounce 0.6s;
+}
+
+
+@keyframes shake {
+0%, 100%                {  transform: translateX(0);  }
+10%, 30%, 50%, 70%, 90% {  transform: translateX(-10px);  }
+20%, 40%, 60%, 80%      {  transform: translateX(10px);  }
+}
+
+.modal-error {
+animation: shake 0.6s;
+}
+
+@media screen and (min-width:240px) and (max-width:720px) {
+font-size: 5px;
+}
+
+
+
+</style>
+ <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' 
+ rel='stylesheet' type='text/css'">
+ <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+ </head>
+ <body class="inner-page">
+ <header class="main-header">
+ <div class="container clearfix">
+ <nav class="main-navigation">
+ <a class="logo-inner" href="index.html">
+ <img src="logo-item.png"
+ width="121" height="24"
+ alt="Барбершоп 'Бородинский'">
+ </a>
+ <ul>
+  <li>
+  <a href="info.html"> Информация </a>
+  </li>
+  <li>
+  <a href="#"> Новости </a>
+  </li>
+  <li class="active">
+  <span> Прайс-лист </span>
+  </li>
+  <li>
+  <a href="shop.html"> Магазин </a>
+  </li>
+  <li>
+  <a href="contacts.html"> Контакты </a>
+  </li>
+  </ul>
+ </nav>
+ <div class="user-block">
+ <a class="login" href="#"> Вход </a>
+ </div>
+ </div>
+ </header>
+ <main class="container">
+ <div class="inner-page-title">
+ <h1> Прайс-лист </h1>
+ <ul class="breadcrumbs">
+ <li>
+ <a href="index.html"> Главная</a>
+ </li>
+ <li class="current"> Прайс-лист 
+ </li>
+ </ul>
+ </div>
+ <div class="inner-content">
+ <div class="big-heading">
+ <h2> Истинно мужская классика:
+ </h2>
+ </div>
+ <div class="inner-column-left">
+ <h2> Мы используем <br> только лучшие средства: </h2>
+ <ul class="custom-list-1">
+ <li> Baxter of California </li>
+ <li> Mr Natty </li>
+ <li> Suavecito </li>
+ <li> Malin+Coetz </li>
+ </ul>
+ </div>
+  <div class="inner-column-right">
+ <h2> Цены на услуги <br> наших мастеров: </h2>
+ <table class="prices-table">
+ <tr>
+ <td> Стрижка </td>
+ <td> 1500 р. </td>
+ </tr>
+ <tr>
+ <td> Стрижка бороды </td> 
+ <td> 500 р. </td>
+ </tr>
+ <tr>
+ <td> Накрутка усов </td>
+ <td> 350 р. </td>
+ </tr>
+ </table>
+ </div>
+ </div>
+ <div class="inner-columns clearfix">
+ <h2> Несколько слов о нас:</h2>
+ <div class="inner-column-left">
+ <p class="short-text"> Наша парикмахерская занимается исключительно мужскими стрижками.
+ Стрижка каждого клиента для нас - это уникальная и продуманная ло мелочей работа.
+ Мы не работаем на количество, мы делаем качество. </p>
+ </div>
+ <div class="inner-column-right">
+ <p class="short-text"> Наша мастерская расположена в центре города, поэтому сделать 
+ стильную стрижку можно в любое время, даже в обеденный перерыв.
+ Здесь вы можете погрузиться в удобную для вас атмосферу, 
+ чувствовать себя комфортно и свободно! </p>
+ </div>
+ </div>
+ </main>
+ 
+ <footer class="main-footer">
+ <div class="container clearfix">
+ <section class="footer-contacts">
+ Барбершоп 'Бородинский' <br>
+ Адрес: г. Санкт-Петербург <br>
+ Б. Конюшенная, д. 19/8 <br>
+ <a href="contacts.html"> Как нас найти?<br> </a> 
+ Телефон: +7 (812) 666-02-66
+ </section>
+ <section class="footer-social">
+ <p> Давайте дружить! </p>
+ <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+<a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+<a class="social-btn social-btn-inst" href="#"> Инстаграм </a>
+ </section>
+ <section class="footer-copyright">
+ <p> Разработано: </p>
+ <a class="btn" href ="https://vk.com/id51181862">Resonance_31</a>
+ </section>
+ </div>
+ </footer>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XV94b_c4iQM0qkDbxXO9Ilok7oqGIIEx&amp;width=766&amp;height=561&id=yandex-map"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+            $("#menu").lavaLamp({
+                fx: "backout",  // ефект easing
+                speed: 700 // скорость
+                }
+            });
+        });
+</script>
+
+
+
+<script src="js/scripts.min.js"></script>
+ 
+ 
+ </body>
+ </html>
+ 

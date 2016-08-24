@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+ <html lang="ru">
+   <head>
+     <meta charset="utf-8">
+ <title> Барбершоп 'Бородинский' </title>
+ <style type="text/css">
+ 
+ /* Нужно подключить normalize.css */
+ 
+html,
+body {
+min-width: 1122px;
+min-height: 1000px;
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", sans-serif;
+color: #ffffff;
+
+no-repeat center top;
+}
+
+
+body {
+min-width: 960px;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color: #ffffff;
+ text-transform: uppercase;
+} 
+
+.inner-page {
+color: #000000;
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;
+height: -1000px;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+height: 20px; 
+background-color: white;
+background-image: linear-hradient (-45deg, white 45%, black 50%, white 55%);
+background-size: 20px;
+}
+
+.container {
+width: 940px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+.main-header {
+margin-bottom: 60px;
+height: 70px;
+color: #ffffff;
+background-color: #000000;
+}
+
+.inner-page .main-header {
+margin-bottom: 55px;
+}
+
+.main-navigation {
+float: left;
+width: 780;
+min-height: 70px;
+}
+
+
+.main-navigation ul {
+margin: 0;
+padding: 0;
+list-style: none;
+font-size: 0;
+}
+
+
+.main-navigation li {
+display: inline-block;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+}
+
+.main-navigation a {
+display: block;
+padding: 25px 20px;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+.main-navigation a:hover {
+background: #242424;
+}
+
+.main-navigation .active {
+position: relative;
+
+background-color: none;
+}
+
+.main-navigation .active a:hover {
+background: none;
+}
+
+.main-navigation .active::after {
+content: "";
+position: absolute;
+right: 20px;
+bottom: 0;
+left: 20px;
+
+
+height: 5px;
+
+background-color: #ffffff;
+}
+
+.main-navigation .active span {
+display: block;
+padding: 25px 20px;
+}
+
+.main-navigation .logo-inner {
+float: left;
+width: 80px;
+height: 20px;
+padding-top: 22px;
+padding-right: 50px;
+margin-left: -150px;
+}
+
+.main-navigation .logo-inner img {
+width: 111px;
+height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+background: none;
+}
+
+.user-block {
+float: right;
+max-width: 140px;
+min-height: 60px;
+}
+
+
+.login {
+position: relative;
+display: inline-block;
+padding: 25px 20px;
+padding-left: 50px;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+color: #ffffff;
+text-decoration: none;
+}
+
+.login:hover {
+background-color: #242424;
+}
+
+
+.login::before {
+content: "";
+position: absolute;
+top: 25px;
+left: 20px;
+
+width: 18px;
+height: 18px;
+
+background: transparent url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat;
+background-position: -1px -210px;
+opacity: 0.3;
+}
+
+.login:hover::before {
+opacity: 1;
+}
+
+.index-logo {
+width: 368px;
+height: 204px;
+margin: 0 auto;
+margin-bottom: 85px;
+}
+
+
+.index-logo img {
+width: 388px;
+height: 204px;
+}
+
+.features {
+margin-bottom: 80px;
+}
+
+.features-item {
+float: left;
+width: 300px;
+margin-right: 20px;
+text-align: center;
+
+/* Только для оформления сетки */
+
+min-height: 175px;
+}
+
+.features-item:last-child {
+margin-right: 0;
+}
+
+.features-name {
+position: relative;
+display: block;
+margin-bottom: 30px;
+padding-bottom: 35px;
+font-size: 30px;
+line-height: 42px;
+}
+
+.features-name::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+margin-left: -10px;
+display: block;
+width: 20px;
+height: 20px;
+background-color: #ffffff;
+transform: rotate(45deg);
+}
+
+.index-content {
+margin-bottom: 35px;
+padding: 50px 80px;
+
+color: #000000;
+
+background: 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/column-delimiter.png") 
+no-repeat center,
+#f8f5f2 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg");
+}
+
+.index-content-left {
+float: left;
+width: 380px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-right {
+float: right;
+width: 300px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-title {
+margin: 0;
+margin-bottom: 25px;
+
+font-size: 26px;
+line-height: 42px;
+}
+
+.index-content p {
+margin: 0;
+margin-bottom: 25px;
+}
+
+.news-preview {
+margin: 0;
+padding: 0;
+padding-right: 35px;
+
+list-style: none;
+}
+
+
+.news-preview li {
+margin-bottom: 25px;
+}
+
+.news-preview p {
+margin-bottom: 0;
+}
+
+.news-preview time {
+text-transform: none;
+font-weight: 400;
+}
+
+
+.btn {
+
+display: inline-block;
+margin-right: 16px;
+padding: 10px 26px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+vertical-align: top;
+text-align: center;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
+
+background-color: #000000;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+background-color: #663d15;
+}
+
+
+.btn.disabled,
+.btn:disabled {
+cursor: default;
+opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+background-color: #000000;
+}
+
+
+.gallery {
+position: relative;
+
+height: 260px;
+}
+
+.gallery-content {
+height: 164px;
+margin: 0;
+
+background-color: #cccccc;
+border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+width: 286px;
+height: 164px;
+}
+
+.gallery .btn {
+position: absolute;
+bottom: 0;
+
+width: 140px;
+margin: 0;
+}
+
+.gallery-prev {
+left: 0;
+}
+
+.gallery-next {
+right: 0;
+}
+
+.appointment-form input {
+float: left;
+width: 106px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding: 7px 15px;
+margin-top: -1.5px;
+
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color; #000000;
+text-transform: uppercase;
+
+background-color: #f9f6f3;
+border: 2px solid #000000;
+outline: none;
+}
+
+.appointment-form input:focus {
+border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+margin-right: 0;
+}
+
+.appointment-form .btn {
+clear: both;
+width: 100%;
+}
+
+/*Стили внутренних страниц */
+
+inner-page-title {
+margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+
+font-size: 30px;
+line-height: 42px;
+}
+
+.breadcrumbs {
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.breadcrumbs li {
+position: relative;
+
+display: inline;
+padding-right: 40px;
+
+}
+
+.breadcrumbs li::after {
+content:"";
+position: absolute;
+top: 4px;
+right: 18px;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+color: #000000;
+text-decoration: none;
+
+}
+
+.breadcrumbs a:hover {
+text-decoration: underline;
+}
+
+.breadcrumbs .current {
+color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+display: none;
+}
+
+/* Общие стили для контентных тегов */ 
+
+.inner-content {
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+.inner-content h2 {
+margin-top: 80px;
+margin-bottom: 30px;
+
+font-size: 24px;
+line-height: 30px;
+}
+
+.inner-content p {
+margin: 14px 0;
+}
+
+.prices-table {
+border-collapse: collapse;
+}
+
+.prices-table td {
+padding: 10px 15px;
+
+border: 2px solid #000000;
+}
+
+/ Особые стили для контентных тегов */
+
+.big-heading {
+margin-top: 55px;
+margin-bottom: 65px;
+
+text-align: center;
+}
+
+.big-heading h2 {
+position: relative;
+z-index: 2;
+
+display: inline;
+margin: 0px;
+
+padding: 0 25px;
+margin-left: 99.5px;
+font-size: 42px;
+line-height: 48px;
+text-align: center;
+
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;;
+}
+
+.big-heading::after {
+content: "";
+position: relative;
+top: -25px;
+z-index: 1;
+display: block;
+
+border-bottom: 2px solid #000000;
+}
+
+.custom-list-1 {
+margin: 14px 0;
+padding: 0;
+
+list-style: none;
+}
+
+.custom-list-1 li {
+position: relative;
+
+margin-bottom: 15px;
+padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+content: "";
+position: absolute;
+top: 8px;
+left: 0;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.prices-table {
+width: 100%;
+}
+
+.prices-table td {
+width: 50%;
+}
+
+.prices-table td:last-child {
+text-align: center;
+}
+
+.short-text {
+padding-right: 30px;
+}
+
+/* Колонки для контента */
+
+.inner-columns {
+margin: 70px 0;
+}
+
+.inner-columns h2{
+margin-right: 520px;
+margin-top: 70px;
+float: left;
+
+}
+
+.inner-column-left,
+.inner-column-right {
+width: 460px;
+}
+
+.inner-column-left {
+float: left;
+}
+
+.inner-column-right {
+float: right;
+}
+
+
+
+.main-footer {
+margin-top: 45px;
+padding-top: 20px;
+padding-bottom: 15px;
+
+color: #ffffff; 
+background: #252525 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/footer-background.jpg");
+}
+
+.footer-contacts {
+float: left;
+width: 320px;
+margin-right: 100px;
+}
+
+.footer-contacts a {
+color: #ffffff;
+}
+
+.footer-contacts a:hover {
+text-decoration: none;
+}
+
+.footer-social {
+float: left;
+width: 180px;
+margin-right: 168px;
+}
+
+.footer-copyright {
+float: right;
+
+max-width: 190px;
+}
+
+
+.footer-social p {
+margin: 0;
+margin-bottom: 15px;
+}
+
+.social-btn {
+display: inline-block;
+width: 43px;
+height: 43px;
+margin: 0 2px;
+
+font-size: 0;
+vertical-align: top;
+text-decoration: none;
+
+background: #000000 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat center;
+
+transition:
+background-position 0.5s,
+background-color 0.5s;
+}
+
+.social-btn:hover {
+background-color: #ffffff;
+}
+
+.social-btn-vk {
+background-position: 8px -825px;
+}
+
+
+.social-btn-fb {
+background-position: 15px -550px;
+}
+
+.social-btn-inst {
+background-position: 11px -690px;
+}
+
+.social-btn-vk:hover {
+background-position: 8px -759px;
+}
+
+
+.social-btn-fb:hover {
+background-position: 15px -478px;
+}
+
+.social-btn-inst:hover {
+background-position: 11px -619px;
+}
+
+.footer-copyright p {
+margin: 0;
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+.footer-copyright .btn {
+margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+color: #000000;
+
+background-color: #ffffff;
+}
+
+.contact-one {
+margin-top: 20px;
+margin-left: 60px;
+}
+
+.contact-one1 {
+font-size: 20px;
+}
+
+
+
+/* Здесь настроим css стили для чата*/
+.holder-html-chat{ border: 1px solid #ccc;padding:10px;background-color: #fff;width: 600px;}
+.html-chat-history{ max-width: 600px; overflow: auto;max-height: 900px; border: 1px solid #ccc;padding: 5px;}
+.html-chat-js-name{ margin-top:10px; }
+.html-chat-js-input{ max-width: 600px;max-height: 100px;width: 600px;margin-top:10px; }
+.html-chat-js-button-holder{ margin-bottom: 0px;margin-top: 10px; }
+.html-chat-js-button-holder input{ width: 220px; }
+.html-chat-js-answer{ float:right; }
+.html-chat-js-answer a{ color: #777;font-size: 12px; font-family: cursive;}
+.html-chat-js-answer a:hover{ color: #338;font-size: 12px; font-family: cursive;}
+.html-chat-msg{ margin: 0px; }
+
+
+
+
+
+
+
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+width: 280px;
+margin: 0;
+margin-bottom: 10px;
+padding: 5px 10px;
+padding-bottom: 4px;
+padding-right: 5px;
+
+font-size: 14px;
+line-height: 20px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color: #000000;
+text-transform: uppercase;
+background-color: #f9f6f3;
+
+border: 2px solid #000000;
+outline: none;
+}
+
+.login-form input:focus {
+border-color: #663d15;
+}
+
+.login-form input.icon-user {
+background-image: url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png");
+background-repeat: no-repeat;
+background-position: 103% -898px;
+}
+
+.login-form input.icon-password {
+background-image: url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png");
+background-repeat: no-repeat;
+background-position: 103% -272px;
+
+}
+
+.login-form .btn {
+width: 100%;
+margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+display: none;
+}
+
+
+
+.login-checkbox {
+position: relative;
+padding-left: 25px;
+font-size: 13px;
+cursor: pointer;
+}
+
+.login-checkbox:hover {
+color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+position: absolute;
+top: -3px;
+left: 0;
+
+width: 17px;
+height: 17px;
+
+border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+content: "";
+position: absolute;
+top: 8px;
+left: 1px;
+
+width: 15px;
+height: 2px;
+
+background-color: #000000;
+}
+
+.restore {
+font-size: 13px;
+float: right;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+transform: rotate(-45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+transform: rotate(45deg);
+}
+
+
+@keyframes bounce {
+0%    { transform: translateY(-2000px); }
+70%   { transform: translateY(30px);    }
+90%   { transform: translateY(-10px);   }
+100%  { transform: translateY(0);       }
+}
+
+.modal-content-show {
+display: block;
+animation: bounce 0.6s;
+}
+
+
+@keyframes shake {
+0%, 100%                {  transform: translateX(0);  }
+10%, 30%, 50%, 70%, 90% {  transform: translateX(-10px);  }
+20%, 40%, 60%, 80%      {  transform: translateX(10px);  }
+}
+
+.modal-error {
+animation: shake 0.6s;
+}
+
+@media screen and (min-width:240px) and (max-width:720px) {
+font-size: 5px;
+}
+
+
+
+
+</style>
+ <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' 
+ rel='stylesheet' type='text/css'">
+ <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+ </head>
+ <body class="inner-page">
+ <header class="main-header">
+ <div class="container clearfix">
+ <nav class="main-navigation">
+ <a class="logo-inner" href="index.html">
+ <img src="logo-item.png"
+ width="121" height="24"
+ alt="Барбершоп 'Бородинский'">
+ </a>
+ <ul>
+  <li>
+  <a href="info.html"> Информация </a>
+  </li>
+  <li>
+  <a href="#"> Новости </a>
+  </li>
+  <li>
+  <a href="new 2.html"> Прайс-лист </a>
+  </li>
+  <li>
+  <a href="shop.html"> Магазин </a>
+  </li>
+  <li class="active">
+  <span> Контакты </span>
+  </li>
+  </ul>
+ </nav>
+ <div class="user-block">
+ <a class="login" href="#"> Вход </a>
+ </div>
+ </div>
+ </header>
+ <main class="container">
+ <div class="inner-page-title">
+ <h1> Контакты </h1>
+ <ul class="breadcrumbs">
+ <li>
+ <a href="index.html"> Главная</a>
+ </li>
+ <li class="current"> Контакты  
+ </li>
+ </ul>
+ </div>
+ <div class="inner-content">
+ 
+ <h2> Как к нам проехать?</h2>
+ 
+  <div class="modal-content-map">
+ <div id="yandex-map"></div> 
+</div> 
+ 
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gZlDnAGvJYCQV8nhKKE3u_vQ8HTNEq_G&amp;width=925&amp;height=585&amp;lang=ru_RU&id=yandex-map"></script>
+ 
+ <div class="contact-one"> БАРБЕРШОП 'БОРОДИНСКИЙ' 
+АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, 
+Б. КОНЮШЕННАЯ, Д. 19/8 
+ТЕЛЕФОН: +7 (812) 666-02-66
+</div>
+ 
+  <h2> Как с нами связаться? </h2>
+ 
+ 
+ <left><form action="#"  method="post"><input type="hidden" name="stan" value="" />
+<div style="width:400px; text-align:left; border:1px solid #CCCCCC; color:#003300; font:12px tahoma, verdana; background:#F5F5F5;">
+<div style="text-align:center; background:#708090; border:1px solid #F5F5F5; color:#ffffff; padding:5px 5px 5px 5px;">ОБРАТНАЯ СВЯЗЬ</div>
+<div style="border-top:solid 1px #CCCCCC; padding:8px 20px 0px 20px;">Ваше имя</div>
+<div style="padding:1px 20px 0px 20px;">
+<input name="name" type="text" style="width:358px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="50" />
+</div>
+<div style="padding:8px 20px 0px 20px;">Обратный e-mail</div>
+<div style="padding:1px 20px 0px 20px;">
+<input name="e_mail" type="text" style="width:358px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="50" />
+</div>
+<div style="padding:8px 20px 0px 20px;">Сообщение</div>
+<div style="padding:1px 20px 0px 20px;">
+<textarea name="text" style="width:358px; height:100px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;"> </textarea>
+</div>
+<div style="overflow:auto; width:100%;">
+<div style="float:left; padding:10px 0px 10px 20px;">Число на картинке<br />
+<input name="captcha" type="text" style="width:220px; height:20px; background:#FFFFFF; border:1px solid #CCCCCC; color:#191970;" maxlength="12" />
+</div>
+<div style="float:right; padding:10px 20px 10px 0px;">
+<a href="http://main-ip.ru/"><img border="0" src="http://main-ip.ru/captcha.php" /></a>
+</div>
+</div>
+<div style="padding:5px 20px 15px 20px; text-align:center;">
+<input type="submit" value="Отправить" style="cursor:pointer; width:200px; height:35px; font:15px tahoma;" />
+</div>
+</div></form></center><!-- 15:27, 02.08.2016 -->
+ 
+ 
+ 
+ 
+ <div>
+ <p class="contact-one1"> ТЕЛЕФОН: +7 (812) 666-02-66 </p>
+ 
+  <h2> Чат: </h2>
+ 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+ 
+<!-- Осталось настроить сам чат и запустить, для этого пишем небольшой скрипт. -->
+<div id="html-chat"></div>
+ 
+<script>
+ 
+   /**
+    * Чат работает на comet-server.ru
+    * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+    */
+    $(document).ready(function()
+    {
+       // Запуск api комет сервера
+       CometServer().start({dev_id: 15 }) // Идентификатор разработчика на comet-server.ru
+ 
+       // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+       htmljs_Chat_Init( $("#html-chat") )
+    });
+</script>
+ 
+ 
+ </div>
+ 
+ </div>
+ </main>
+ 
+ <footer class="main-footer">
+ <div class="container clearfix">
+ <section class="footer-contacts">
+ Барбершоп 'Бородинский' <br>
+ Адрес: г. Санкт-Петербург <br>
+ Б. Конюшенная, д. 19/8 <br>
+ <a href="#"> Как нас найти?<br> </a> 
+ Телефон: +7 (812) 666-02-66
+ </section>
+ <section class="footer-social">
+ <p> Давайте дружить! </p>
+ <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+<a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+<a class="social-btn social-btn-inst" href="#"> Инстаграм </a>
+ </section>
+ <section class="footer-copyright">
+ <p> Разработано: </p>
+ <a class="btn" href ="https://vk.com/id51181862">Resonance_31</a>
+ </section>
+ </div>
+ </footer>
+ 
+ <div class="modal-content"> 
+ <button class="modal-content-close" type="button" 
+ title="Закрыть"> Закрыть </button>
+ <h2 class="modal-content-title">
+ Личный кабинет</h2>
+ <p> Введите свой логин и пароль</p>
+ <form class="login-form" action="#" method="post">
+ <input class="icon-user" type="text" name="login" 
+ placeholder="Логин">
+ <input class="icon-password" 
+ type="password" name="password" 
+ placeholder="Пароль">
+ <label class="login-checkbox">
+ <input type="checkbox" name="remember">
+ <span class="checkbox-indicator"></span>
+ Запомните меня 
+ </label>
+ <a class="restore" href="#"> Я забыл пароль! </a>
+ <button class="btn" type="submit"> Войти </button>
+ </form>
+ </div>
+
+ 
+ 
+ 
+ <script type="text/javascript">
+$(document).ready(function() {
+            $("#menu").lavaLamp({
+                fx: "backout",  // ефект easing
+                speed: 700 // скорость
+                }
+            });
+        });
+</script>
+
+
+
+<script> 
+
+var link = document.querySelector(".login");
+var popup = document.querySelector(".modal-content");
+var close = popup.querySelector(".modal-content-close");
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=login]");
+var password = popup.querySelector("[name=password]");
+var storage = localStorage.getItem("login");
+
+link.addEventListener("click", function(event) {
+event.preventDefault();
+popup.classList.add("modal-content-show");
+if (storage) {
+login.value = storage;
+password.focus();
+} else {
+login.focus();
+}
+});
+
+close.addEventListener("click", function(event) {
+event.preventDefault();
+popup.classList.remove("modal-content-show");
+popup.classList.remove("modal-error");
+});
+
+
+form.addEventListener("submit", function(event) {
+if (!login.value || !password.value) {
+event.preventDefault();
+popup.classList.add("modal-error");
+} else {
+localStorage.setItem("login", login.value);
+}
+});
+
+window.addEventListener("keydown", function(event) {
+if (event.keyCode === 27) {
+if (popup.classList.contains("modal-content-show")) {
+popup.classList.remove("modal-content-show");
+}
+}
+});
+
+</script>
+
+ 
+ </body>
+ </html>
+ 

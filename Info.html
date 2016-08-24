@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+ <html lang="ru">
+   <head>
+     <meta charset="utf-8">
+ <title> Барбершоп 'Бородинский' </title>
+ <style type="text/css">
+ 
+ /* Нужно подключить normalize.css */
+ 
+html,
+body {
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 20px;
+font-family: "PT Sans Narrow", sans-serif;
+color: #ffffff;
+no-repeat center top;
+}
+
+
+body {
+height: 100%;
+font-weight: 700;
+font-size: 14px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color: #ffffff;
+ text-transform: uppercase;
+} 
+
+.inner-page {
+color: #000000;
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;
+height: -1000px;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+height: 20px; 
+background-color: white;
+background-image: linear-hradient (-45deg, white 45%, black 50%, white 55%);
+background-size: 20px;
+}
+
+.container {
+width: 940px;
+margin: 0 auto;
+padding: 0 10px;
+}
+
+.main-header {
+margin-bottom: 60px;
+height: 70px;
+color: #ffffff;
+background-color: #000000;
+}
+
+
+
+.header {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -100px 0; /* отрицательный нижний отступ на высоту футера */
+    padding: 0;
+}
+
+.inner-page .main-header {
+margin-bottom: 55px;
+}
+
+.main-navigation {
+float: left;
+width: 780;
+min-height: 70px;
+}
+
+
+.main-navigation ul {
+margin: 0;
+padding: 0;
+list-style: none;
+font-size: 0;
+}
+
+
+.main-navigation li {
+display: inline-block;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+}
+
+.main-navigation a {
+display: block;
+padding: 25px 20px;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+.main-navigation a:hover {
+background: #242424;
+}
+
+.main-navigation .active {
+position: relative;
+
+background-color: none;
+}
+
+.main-navigation .active a:hover {
+background: none;
+}
+
+.main-navigation .active::after {
+content: "";
+position: absolute;
+right: 20px;
+bottom: 0;
+left: 20px;
+
+
+height: 5px;
+
+background-color: #ffffff;
+}
+
+.main-navigation .active span {
+display: block;
+padding: 25px 20px;
+}
+
+.main-navigation .logo-inner {
+float: left;
+width: 80px;
+height: 20px;
+padding-top: 22px;
+padding-right: 50px;
+margin-left: -150px;
+}
+
+.main-navigation .logo-inner img {
+width: 111px;
+height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+background: none;
+}
+
+.user-block {
+float: right;
+max-width: 140px;
+min-height: 60px;
+}
+
+
+.login {
+position: relative;
+display: inline-block;
+padding: 25px 20px;
+padding-left: 50px;
+font-size: 16px;
+line-height: 20px;
+vertical-align: top;
+color: #ffffff;
+text-decoration: none;
+}
+
+.login:hover {
+background-color: #242424;
+}
+
+
+.login::before {
+content: "";
+position: absolute;
+top: 25px;
+left: 20px;
+
+width: 18px;
+height: 18px;
+
+background: transparent url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat;
+background-position: -1px -210px;
+opacity: 0.3;
+}
+
+.login:hover::before {
+opacity: 1;
+}
+
+.index-logo {
+width: 368px;
+height: 204px;
+margin: 0 auto;
+margin-bottom: 85px;
+}
+
+
+.index-logo img {
+width: 388px;
+height: 204px;
+}
+
+.features {
+margin-bottom: 80px;
+}
+
+.features-item {
+float: left;
+width: 300px;
+margin-right: 20px;
+text-align: center;
+
+/* Только для оформления сетки */
+
+min-height: 175px;
+}
+
+.features-item:last-child {
+margin-right: 0;
+}
+
+.features-name {
+position: relative;
+display: block;
+margin-bottom: 30px;
+padding-bottom: 35px;
+font-size: 30px;
+line-height: 42px;
+}
+
+.features-name::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+margin-left: -10px;
+display: block;
+width: 20px;
+height: 20px;
+background-color: #ffffff;
+transform: rotate(45deg);
+}
+
+.index-content {
+margin-bottom: 35px;
+padding: 50px 80px;
+
+color: #000000;
+
+background: 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/column-delimiter.png") 
+no-repeat center,
+#f8f5f2 
+url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg");
+}
+
+.index-content-left {
+float: left;
+width: 380px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-right {
+float: right;
+width: 300px;
+
+/* Только для оформления сетки */
+min-height: 330px;
+}
+
+
+.index-content-title {
+margin: 0;
+margin-bottom: 25px;
+
+font-size: 26px;
+line-height: 42px;
+}
+
+.index-content p {
+margin: 0;
+margin-bottom: 25px;
+}
+
+.news-preview {
+margin: 0;
+padding: 0;
+padding-right: 35px;
+
+list-style: none;
+}
+
+
+.news-preview li {
+margin-bottom: 25px;
+}
+
+.news-preview p {
+margin-bottom: 0;
+}
+
+.news-preview time {
+text-transform: none;
+font-weight: 400;
+}
+
+
+.btn {
+
+display: inline-block;
+margin-right: 16px;
+padding: 10px 26px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+vertical-align: top;
+text-align: center;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
+
+background-color: #000000;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+background-color: #663d15;
+}
+
+
+.btn.disabled,
+.btn:disabled {
+cursor: default;
+opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+background-color: #000000;
+}
+
+
+.gallery {
+position: relative;
+
+height: 260px;
+}
+
+.gallery-content {
+height: 164px;
+margin: 0;
+
+background-color: #cccccc;
+border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+width: 286px;
+height: 164px;
+}
+
+.gallery .btn {
+position: absolute;
+bottom: 0;
+
+width: 140px;
+margin: 0;
+}
+
+.gallery-prev {
+left: 0;
+}
+
+.gallery-next {
+right: 0;
+}
+
+.appointment-form input {
+float: left;
+width: 106px;
+margin-right: 20px;
+margin-bottom: 20px;
+padding: 7px 15px;
+margin-top: -1.5px;
+
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial", sans-serif;
+color; #000000;
+text-transform: uppercase;
+
+background-color: #f9f6f3;
+border: 2px solid #000000;
+outline: none;
+}
+
+.appointment-form input:focus {
+border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+margin-right: 0;
+}
+
+.appointment-form .btn {
+clear: both;
+width: 100%;
+}
+
+/*Стили внутренних страниц */
+
+inner-page-title {
+margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+
+font-size: 30px;
+line-height: 42px;
+}
+
+.breadcrumbs {
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.breadcrumbs li {
+position: relative;
+
+display: inline;
+padding-right: 40px;
+
+}
+
+.breadcrumbs li::after {
+content:"";
+position: absolute;
+top: 4px;
+right: 18px;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+color: #000000;
+text-decoration: none;
+
+}
+
+.breadcrumbs a:hover {
+text-decoration: underline;
+}
+
+.breadcrumbs .current {
+color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+display: none;
+}
+
+/* Общие стили для контентных тегов */ 
+
+.inner-content {
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+.inner-content h2 {
+margin-top: 80px;
+margin-bottom: 30px;
+
+font-size: 24px;
+line-height: 30px;
+}
+
+.inner-content p {
+margin: 14px 0;
+}
+
+.prices-table {
+border-collapse: collapse;
+}
+
+.prices-table td {
+padding: 10px 15px;
+
+border: 2px solid #000000;
+}
+
+/ Особые стили для контентных тегов */
+
+.big-heading {
+margin-top: 55px;
+margin-bottom: 65px;
+
+text-align: center;
+}
+
+.big-heading h2 {
+position: relative;
+z-index: 2;
+
+display: inline;
+margin: 0px;
+
+padding: 0 25px;
+margin-left: 99.5px;
+font-size: 42px;
+line-height: 48px;
+text-align: center;
+
+background: #f8f3f0 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/content-background.jpg") repeat;;
+}
+
+.big-heading::after {
+content: "";
+position: relative;
+top: -25px;
+z-index: 1;
+display: block;
+
+border-bottom: 2px solid #000000;
+}
+
+.custom-list-1 {
+margin: 14px 0;
+padding: 0;
+
+list-style: none;
+}
+
+.custom-list-1 li {
+position: relative;
+
+margin-bottom: 15px;
+padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+content: "";
+position: absolute;
+top: 8px;
+left: 0;
+
+width: 8px;
+height: 8px;
+
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.prices-table {
+width: 100%;
+}
+
+.prices-table td {
+width: 50%;
+}
+
+.prices-table td:last-child {
+text-align: center;
+}
+
+.short-text {
+padding-right: 30px;
+}
+
+/* Колонки для контента */
+
+.inner-columns {
+margin: 70px 0;
+}
+
+.inner-columns h2{
+margin-right: 520px;
+margin-top: 70px;
+float: left;
+
+}
+
+.inner-column-left,
+.inner-column-right {
+width: 460px;
+}
+
+.inner-column-left {
+float: left;
+}
+
+.inner-column-right {
+float: right;
+}
+
+
+
+.main-footer {
+height: 120px;
+    margin: 0;
+    padding: 0;
+margin-top: 45px;
+padding-top: 20px;
+padding-bottom: 15px;
+
+color: #ffffff; 
+background: #252525 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/footer-background.jpg");
+}
+
+.footer-contacts {
+float: left;
+width: 320px;
+margin-right: 100px;
+}
+
+.footer-contacts a {
+color: #ffffff;
+}
+
+.footer-contacts a:hover {
+text-decoration: none;
+}
+
+.footer-social {
+float: left;
+width: 180px;
+margin-right: 168px;
+}
+
+.footer-copyright {
+float: right;
+
+max-width: 190px;
+}
+
+
+.footer-social p {
+margin: 0;
+margin-bottom: 15px;
+}
+
+.social-btn {
+display: inline-block;
+width: 43px;
+height: 43px;
+margin: 0 2px;
+
+font-size: 0;
+vertical-align: top;
+text-decoration: none;
+
+background: #000000 url("https://raw.githubusercontent.com/ndgo/barbershop-borodinski/master/img/sprites.png")
+no-repeat center;
+
+transition:
+background-position 0.5s,
+background-color 0.5s;
+}
+
+.social-btn:hover {
+background-color: #ffffff;
+}
+
+.social-btn-vk {
+background-position: 8px -825px;
+}
+
+
+.social-btn-fb {
+background-position: 15px -550px;
+}
+
+.social-btn-inst {
+background-position: 11px -690px;
+}
+
+.social-btn-vk:hover {
+background-position: 8px -759px;
+}
+
+
+.social-btn-fb:hover {
+background-position: 15px -478px;
+}
+
+.social-btn-inst:hover {
+background-position: 11px -619px;
+}
+
+.footer-copyright p {
+margin: 0;
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+.footer-copyright .btn {
+margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+color: #000000;
+
+background-color: #ffffff;
+}
+
+
+
+
+#calendar {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar tbody td:nth-child(n+6), #calendar .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+
+</style>
+
+
+
+ <link rel="stylesheet" href="<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' 
+ rel='stylesheet' type='text/css'">
+ <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+ </head>
+ <body class="inner-page">
+ <header class="main-header">
+ <div class="container clearfix">
+ <nav class="main-navigation">
+ <a class="logo-inner" href="index.html">
+ <img src="logo-item.png"
+ width="121" height="24"
+ alt="Барбершоп 'Бородинский'">
+ </a>
+ <ul>
+  <li class="active">
+  <span> Информация </span>
+  </li>
+  <li>
+  <a href="#"> Новости </a>
+  </li>
+  <li>
+  <a href="new 2.html"> Прайс-лист </a>
+  </li>
+  <li>
+  <a href="shop.html"> Магазин </a>
+  </li>
+  <li>
+  <a href="contacts.html"> Контакты </a>
+  </li>
+  </ul>
+ </nav>
+ <div class="user-block">
+ <a class="login" href="#"> Вход </a>
+ </div>
+ </div>
+ </header>
+ <main class="container">
+ <div class="inner-page-title">
+ <h1> Информация </h1>
+ <ul class="breadcrumbs">
+ <li>
+ <a href="index.html"> Главная</a>
+ </li>
+ <li class="current"> Информация  
+ </li>
+ </ul>
+ </div>
+ <div class="inner-content">
+ 
+ <h2> Время работы:</h2>
+ 
+ 
+ 
+ 
+
+ 
+ <div>
+ <p class="short-text"> 
+ПН: С 10:00 ДО 22:00   <br>
+ВТ: С 10:00 ДО 22:00   <br>
+СР: С 10:00 ДО 22:00   <br>
+ЧТ: С 10:00 ДО 22:00   <br>
+ПТ: С 10:00 ДО 22:00  <br>
+СБ: С 10:00 ДО 19:00  <br>
+ВС: С 10:00 ДО 19:00 </p>
+ </div>
+ 
+ 
+  
+ <script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+ 
+ 
+ <span id="doc_time">
+ Дата и время
+</span>
+ 
+ <script type="text/javascript">
+ clock();
+</script>
+ 
+ 
+ </div>
+ 
+ 
+ 
+ <div>
+<div style="width:220px; border:1px solid #c0c0c0; padding:6px;">
+<table id="calendar"  border="0" cellspacing="0" cellpadding="1">
+  <thead>
+    <tr><td><b>‹</b><td colspan="5"><td><b>›</b>
+    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  </thead>
+  <tbody></tbody>
+</table>
+</div>
+</div>
+
+
+<script>
+function calendar(id, year, month) {
+var Dlast = new Date(year,month+1,0).getDate(),
+    D = new Date(year,month,Dlast),
+    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+    calendar = '<tr>',
+    month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+if (DNfirst != 0) {
+  for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+}else{
+  for(var  i = 0; i < 6; i++) calendar += '<td>';
+}
+for(var  i = 1; i <= Dlast; i++) {
+  if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+    calendar += '<td class="today">' + i;
+  }else{
+    calendar += '<td>' + i;
+  }
+  if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+    calendar += '<tr>';
+  }
+}
+for(var  i = DNlast; i < 7; i++) calendar += '<td> ';
+document.querySelector('#'+id+' tbody').innerHTML = calendar;
+document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+}
+}
+calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+// переключатель минус месяц
+document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+  calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)-1);
+}
+// переключатель плюс месяц
+document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+  calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
+}
+</script>
+
+ 
+ </main>
+ 
+ 
+ <footer class="main-footer">
+ <div class="container clearfix">
+ <section class="footer-contacts">
+ Барбершоп 'Бородинский' <br>
+ Адрес: г. Санкт-Петербург <br>
+ Б. Конюшенная, д. 19/8 <br>
+ <a href="contacts.html"> Как нас найти?<br> </a> 
+ Телефон: +7 (812) 666-02-66
+ </section>
+ <section class="footer-social">
+ <p> Давайте дружить! </p>
+ <a class="social-btn social-btn-vk" href="#"> Вконтакте </a>
+<a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+<a class="social-btn social-btn-inst" href="#"> Инстаграм </a>
+ </section>
+ <section class="footer-copyright">
+ <p> Разработано: </p>
+ <a class="btn" href ="https://vk.com/id51181862">Resonance_31</a>
+ </section>
+ </div>
+ </footer>
+ </body>
+ </html>
+ 
